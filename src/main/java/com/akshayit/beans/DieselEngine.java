@@ -1,4 +1,5 @@
 package com.akshayit.beans;
+
 import org.springframework.stereotype.Component;
 
 @Component
