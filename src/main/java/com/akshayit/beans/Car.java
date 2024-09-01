@@ -2,9 +2,11 @@ package com.akshayit.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.yaml.snakeyaml.scanner.Constant;
 
 @Component
 public class Car {
+	private String data="akshaybidkar";
 	private IEngine engine;
 
 	public Car(IEngine engine) {
@@ -20,4 +22,12 @@ public class Car {
 			System.out.println("Jorney Started..");
 		}
 	}
+	public void getData()
+	{
+		if(data.equalsIgnoreCase(com.akshayit.beans.Constant.DATA_TYPE))
+		{
+			System.out.println("Welcome to github");
+		}
+	}
+	
 }
