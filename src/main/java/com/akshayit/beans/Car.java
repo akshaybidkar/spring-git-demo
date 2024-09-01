@@ -14,7 +14,10 @@ public class Car {
 		this.engine = engine;
 		System.out.println("Car class::constructor");
 	}
-
+      public void addedMethod()
+	{
+		System.out.println("new Method");
+	}
 	public void drive() {
 		int status = engine.start();
 		if(status==0)
